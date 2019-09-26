@@ -11,6 +11,8 @@ try {
     $events = $stream->fromFile(2);
 
     echo implode(', ', array_map(function($event) { return get_class($event);}, $events));
+
+    print "\n\nCount of Events: " . count($events);
 } catch (Exception $e) {
     echo $e->getMessage();
 }
