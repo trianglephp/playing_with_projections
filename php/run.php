@@ -10,9 +10,14 @@ try {
 
     $events = $stream->fromFile(2);
 
-    echo implode(', ', array_map(function($event) { return get_class($event);}, $events));
+    $cnt = 0;
 
-    print "\n\nCount of Events: " . count($events);
+    foreach ($events as $event) {
+	    $cnt++;
+	    print $cnt . ": " . get_class($event) . ", ";
+    }
+
+    print "\n\nCount of Events: " . $cnt;
 } catch (Exception $e) {
     echo $e->getMessage();
 }
