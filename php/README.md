@@ -19,5 +19,5 @@ docker build -t pwp/php .
 docker run -it --rm -v $(pwd)/../:/home/pwp pwp/php /bin/sh
 ```
 
-[Workshop Instructions](https://playingwithprojections.github.io/)
-[Challenges](https://playingwithprojections.github.io/challenge/list/)
+ - [Workshop Instructions](https://playingwithprojections.github.io/)
+ - [Challenges](https://playingwithprojections.github.io/challenge/list/)
